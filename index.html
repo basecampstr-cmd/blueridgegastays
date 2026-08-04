@@ -1,0 +1,803 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blue Ridge Stays by Basecamp Getaways — Book Direct Mountain Cabins &amp; Local Guide</title>
+<meta name="description" content="Book direct on hand-managed Blue Ridge, GA mountain cabins, plus the most comprehensive local guide to Blue Ridge: things to do, dining, wineries, outdoor adventure, fly fishing, and a live events calendar.">
+<style>
+:root{--pine:#16382f;--pine2:#0f2a23;--moss:#3f7d63;--sage:#7a9b86;--cream:#f6f1e7;--paper:#fffdf8;--ink:#1d2b2a;--muted:#5d6a64;--gold:#c39a4e;--gold2:#a9823a;--line:#e7ddca;--shadow:0 14px 40px rgba(20,40,34,.12);}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:66px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4,.serif{font-family:Georgia,"Times New Roman",serif}
+a{color:var(--pine);text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.eyebrow{text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:700;color:var(--gold2)}
+.btn{display:inline-block;background:var(--gold);color:#23170a;font-weight:700;padding:13px 22px;border-radius:999px;border:none;cursor:pointer;font-size:15px;transition:transform .15s,background .15s}
+.btn:hover{background:var(--gold2);transform:translateY(-1px)}
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(15,42,35,.94);backdrop-filter:blur(10px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:11px;color:#fff}
+.brand img{width:40px;height:40px;object-fit:contain;filter:drop-shadow(0 2px 4px rgba(0,0,0,.3))}
+.brand .bt{font-family:Georgia,serif;font-weight:700;font-size:18px;line-height:1.05}
+.brand .bt small{display:block;font-family:-apple-system,sans-serif;font-weight:500;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#cdd8cf;margin-top:2px}
+nav.main{display:flex;gap:3px;align-items:center}
+nav.main a{color:#e7eee7;padding:9px 11px;border-radius:8px;font-size:14px;font-weight:600}
+nav.main a:hover{background:rgba(255,255,255,.1);color:#fff}
+nav.main a.cta{background:var(--gold);color:#23170a;margin-left:6px}
+.navtoggle{display:none;background:none;border:none;color:#fff;font-size:26px;cursor:pointer}
+@media(max-width:1000px){nav.main{position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--pine2);padding:10px;gap:2px;display:none}nav.main.open{display:flex}nav.main a{padding:13px}.navtoggle{display:block}}
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.4s ease}
+.hero .slide.on{opacity:1}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(8,24,19,.82) 0%,rgba(8,24,19,.5) 45%,rgba(8,24,19,.25) 100%)}
+.hero .inner{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:60px 22px;width:100%}
+.hero h1{font-size:clamp(36px,6vw,64px);line-height:1.03;margin:14px 0 14px;max-width:780px}
+.hero .lead{font-size:clamp(16px,2.2vw,20px);max-width:620px;color:#eef3ee}
+.hero .badges{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 26px}
+.hero .badges span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:600}
+.search{background:rgba(255,255,255,.96);color:var(--ink);border-radius:18px;padding:16px;display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:12px;max-width:780px;box-shadow:var(--shadow)}
+.search label{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
+.search input,.search select{width:100%;padding:11px 12px;border:1px solid var(--line);border-radius:10px;font-size:15px;background:#fff;color:var(--ink)}
+.search .go{align-self:end}.search .go button{width:100%;height:44px}
+@media(max-width:760px){.search{grid-template-columns:1fr 1fr}.search .go{grid-column:1/3}}
+/* conditions */
+.cond{background:var(--pine);color:#fff;padding:18px 0}
+.cond .row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
+.tile{flex:1;min-width:140px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:14px 16px;text-align:center}
+.tile .k{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#bcd0c2;font-weight:700}
+.tile .v{font-family:Georgia,serif;font-size:26px;margin-top:4px}
+.tile .s{font-size:11px;color:#9fb6a6;margin-top:3px}
+.tile a{color:var(--gold);font-weight:700;font-size:13px}
+/* sections */
+section.block{padding:62px 0}
+section.block.alt{background:var(--paper)}
+.shead{max-width:760px;margin-bottom:30px}
+.shead h2{font-size:clamp(28px,4vw,40px);margin:8px 0 8px;color:var(--pine)}
+.shead p{color:var(--muted);font-size:17px;margin:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .15s}
+.card:hover{transform:translateY(-4px)}
+.card .ph{aspect-ratio:4/3;background:#dfe6df center/cover no-repeat;position:relative}
+.card .tag{position:absolute;top:12px;left:12px;background:rgba(15,42,35,.9);color:#fff;font-size:12px;font-weight:700;padding:5px 10px;border-radius:999px}
+.card .body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{margin:0;font-size:20px;color:var(--pine)}
+.card .meta{color:var(--muted);font-size:14px;font-weight:600}
+.card .desc{font-size:14px;color:#4b5751;flex:1}
+.card .btn{margin-top:6px;text-align:center}
+.subhead{grid-column:1/-1;display:flex;align-items:center;gap:12px;margin-top:8px}
+.subhead h3{margin:0;color:var(--gold2);font-size:14px;text-transform:uppercase;letter-spacing:.14em}
+.subhead:before,.subhead:after{content:"";height:1px;background:var(--line);flex:1}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:860px){.feat{grid-template-columns:1fr}}
+.fcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow)}
+.fcard h3{margin:0 0 6px;color:var(--pine);font-size:21px}
+.fcard p{margin:0 0 8px;color:#4b5751;font-size:14.5px}
+.fcard .pill{display:inline-block;background:#eef4ee;color:var(--moss);font-size:12px;font-weight:700;padding:3px 9px;border-radius:999px;margin-bottom:8px}
+/* guide */
+.guidenav{position:sticky;top:64px;z-index:30;background:var(--cream);border-bottom:1px solid var(--line);padding:10px 0}
+.guidenav .row{display:flex;gap:8px;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch}
+.guidenav a{flex:0 0 auto;background:#fff;border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:13.5px;font-weight:700;color:var(--pine)}
+.guidenav a:hover{background:var(--pine);color:#fff}
+.catblock{margin-bottom:34px}
+.catbanner{height:210px;border-radius:18px;background-color:var(--pine);background-size:cover;background-position:center;position:relative;overflow:hidden;display:flex;align-items:flex-end;box-shadow:var(--shadow)}
+.catbanner:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,42,35,.28) 0%,rgba(15,42,35,.5) 50%,rgba(15,42,35,.9) 100%)}
+.catbanner-in{position:relative;z-index:2;padding:20px 24px;color:#fff}
+.catbanner-in h3{margin:0;font-size:28px}
+.catbanner-in p{margin:4px 0 0;font-size:14px;color:#eef3ee;max-width:680px}
+.glist{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
+@media(max-width:900px){.glist{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.glist{grid-template-columns:1fr}}
+.gitem{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px;display:flex;flex-direction:column}
+.gitem h4{margin:0 0 5px;font-size:16.5px;color:var(--pine)}
+.gitem p{margin:0 0 10px;font-size:13.5px;color:#4b5751;flex:1}
+.glinks{display:flex;gap:14px}
+.glinks a{font-size:12.5px;font-weight:700;color:var(--gold2)}
+/* events calendar */
+.ev-month{color:var(--pine);font-size:22px;margin:28px 0 12px;border-bottom:2px solid var(--gold);display:inline-block;padding-bottom:4px}
+.evgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+@media(max-width:760px){.evgrid{grid-template-columns:1fr}}
+.ev{display:flex;gap:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;align-items:center;transition:transform .12s}
+.ev:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.ev-date{flex:0 0 56px;text-align:center;background:var(--pine);color:#fff;border-radius:10px;padding:8px 4px}
+.ev-mo{display:block;font-size:11px;font-weight:700;letter-spacing:.08em}
+.ev-day{display:block;font-family:Georgia,serif;font-size:22px;line-height:1}
+.ev-body{flex:1}
+.ev-title{font-weight:700;color:var(--ink);font-size:15px}
+.ev-meta{font-size:12.5px;color:var(--muted);margin-top:2px}
+.livebadge{display:inline-flex;align-items:center;gap:7px;background:#eef4ee;color:var(--moss);font-size:12.5px;font-weight:700;padding:5px 12px;border-radius:999px}
+.livedot{width:8px;height:8px;border-radius:50%;background:#3fae6a;box-shadow:0 0 0 0 rgba(63,174,106,.6);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,174,106,.5)}70%{box-shadow:0 0 0 8px rgba(63,174,106,0)}100%{box-shadow:0 0 0 0 rgba(63,174,106,0)}}
+/* owner + footer */
+.owner{background:var(--pine);color:#fff;border-radius:22px;padding:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+.owner h2{margin:0 0 8px;color:#fff}.owner p{margin:0;color:#cfe0d4;max-width:560px}
+footer.site{background:var(--pine2);color:#cdd8cf;padding:40px 0;font-size:14px}
+footer.site .cols{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
+footer.site a{color:#e7eee7}
+.fine{margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:12.5px;color:#8ea596}
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top"><img src="https://assets.craftedstays.co/oQqFN8faM3foYkBbda3UEMBAG0o2/0RlW7pplaYbum2AzPd1C/CV-5-NoBG-1772803499883.png" alt="Basecamp Getaways logo"><span class="bt">Blue Ridge Stays<small>by Basecamp Getaways</small></span></a>
+    <button class="navtoggle" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <nav class="main" id="nav" onclick="this.classList.remove('open')">
+      <a href="#homes">Cabins</a>
+      <a href="#lakes">The Lakes</a>
+      <a href="#fishing">Fly Fishing</a>
+      <a href="#guide">Local Guide</a>
+      <a href="#events">Events</a>
+      <a href="#owner">Own a Home?</a>
+      <a class="cta" href="#homes">Book Direct</a>
+    </nav>
+  </div>
+</header>
+<a id="top"></a>
+<section class="hero">
+  <div class="slide on" style="background-image:url('https://a0.muscache.com/im/pictures/miso/Hosting-1079587399018665167/original/43822922-6769-4eed-93e3-67eed4b1a82c.jpeg')"></div><div class="slide" style="background-image:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1035356485735504432/original/b906af8b-c89f-49e1-b334-fdfc0543ff4c.png')"></div><div class="slide" style="background-image:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1035406818240049069/original/6a1436de-9c04-4ec4-9265-c7ed84147048.png')"></div><div class="slide" style="background-image:url('https://assets.hospitable.com/property_images/1880794/iil7XhIeGfcXPcpitGoCWOauYR5pAYf7TpBb5q3l.jpg')"></div>
+  <div class="inner">
+    <div class="eyebrow" style="color:#e8cf94">Blue Ridge · Mineral Bluff · Lake Chatuge, Georgia</div>
+    <h1 class="serif">Your basecamp in the Blue Ridge Mountains.</h1>
+    <p class="lead">Hand-managed cabins minutes from downtown Blue Ridge, the Toccoa River, and three mountain lakes — plus the most complete local guide in town. Book direct, no extra service fees.</p>
+    <div class="badges"><span>★ Superhost-level care</span><span>Hot tubs &amp; mountain views</span><span>Pet-friendly options</span><span>Local team on the ground</span></div>
+    <div class="search" id="search">
+      <div><label>Check-in</label><input type="date" id="ci"></div>
+      <div><label>Check-out</label><input type="date" id="co"></div>
+      <div><label>Guests</label><select id="gs"><option value="0">Any</option><option value="2">2+</option><option value="4">4+</option><option value="6">6+</option><option value="8">8+</option><option value="10">10+</option><option value="12">12+</option></select></div>
+      <div class="go"><label>&nbsp;</label><button class="btn" onclick="doSearch()">Find a Cabin</button></div>
+    </div>
+  </div>
+</section>
+<div class="cond"><div class="wrap row">
+  <div class="tile"><div class="k">Blue Ridge Now</div><div class="v" id="c-temp">—</div><div class="s" id="c-sky">Live weather</div></div>
+  <div class="tile"><div class="k">Wind</div><div class="v" id="c-wind">—</div><div class="s">Open-Meteo · live</div></div>
+  <div class="tile"><div class="k">Humidity</div><div class="v" id="c-hum">—</div><div class="s">Open-Meteo · live</div></div>
+  <div class="tile"><div class="k">Toccoa River Flow</div><div class="v" id="c-flow">—</div><div class="s">USGS · fly-fishing</div></div>
+  <div class="tile"><div class="k">Lake Blue Ridge</div><div class="v" style="font-size:20px">1,690 ft</div><div class="s"><a href="https://www.tva.com/environment/lake-levels/blue-ridge" target="_blank" rel="noopener">TVA level →</a></div></div>
+</div></div>
+<section class="block" id="homes">
+  <div class="wrap">
+    <div class="shead"><div class="eyebrow">The Cabins</div><h2 class="serif">Six homes, one mountain town</h2><p>Every stay is directly managed by our local Basecamp Getaways team. Book direct below and skip the third-party service fees.</p></div>
+    <div class="grid" id="cards">
+      <div class="subhead"><h3>Blue Ridge &amp; Mineral Bluff</h3></div>
+
+      <div class="card" data-guests="12">
+        <div class="ph" style="background-image:url('https://a0.muscache.com/im/pictures/miso/Hosting-1079587399018665167/original/43822922-6769-4eed-93e3-67eed4b1a82c.jpeg')"><span class="tag">Blue Ridge · sleeps 12</span></div>
+        <div class="body">
+          <h3>Star Mountain</h3>
+          <div class="meta">5 BR · 3.5 BA · up to 12 guests</div>
+          <div class="desc">Big-group mountain lodge with long-range views and easy access to downtown Blue Ridge.</div>
+          <a class="btn" href="https://www.basecampgetaways.com/property/starmountain" target="_blank" rel="noopener">View &amp; Book Direct →</a>
+        </div>
+      </div>
+
+      <div class="card" data-guests="10">
+        <div class="ph" style="background-image:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1035356485735504432/original/b906af8b-c89f-49e1-b334-fdfc0543ff4c.png')"><span class="tag">Blue Ridge · sleeps 10</span></div>
+        <div class="body">
+          <h3>Cozy Bear Cabin</h3>
+          <div class="meta">3 BR · 3 BA · up to 10 guests</div>
+          <div class="desc">Classic cabin feel with a hot tub and a golden-hour fire pit — a comfortable family base.</div>
+          <a class="btn" href="https://www.basecampgetaways.com/property/cozybearcabin" target="_blank" rel="noopener">View &amp; Book Direct →</a>
+        </div>
+      </div>
+
+      <div class="card" data-guests="8">
+        <div class="ph" style="background-image:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1035406818240049069/original/6a1436de-9c04-4ec4-9265-c7ed84147048.png')"><span class="tag">Mineral Bluff · sleeps 8</span></div>
+        <div class="body">
+          <h3>Blue Chalet</h3>
+          <div class="meta">4 BR · 3 BA · up to 8 guests</div>
+          <div class="desc">A bright chalet retreat minutes from the Toccoa River and the scenic railway line.</div>
+          <a class="btn" href="https://www.basecampgetaways.com/property/bluechalet" target="_blank" rel="noopener">View &amp; Book Direct →</a>
+        </div>
+      </div>
+
+      <div class="card" data-guests="8">
+        <div class="ph" style="background-image:url('https://assets.hospitable.com/property_images/1880794/iil7XhIeGfcXPcpitGoCWOauYR5pAYf7TpBb5q3l.jpg')"><span class="tag">Mineral Bluff · sleeps 8</span></div>
+        <div class="body">
+          <h3>Endless Views</h3>
+          <div class="meta">3 BR · 3.5 BA · up to 8 guests</div>
+          <div class="desc">Named for the panorama — wraparound mountain views, hot tub, and sunset-worthy decks.</div>
+          <a class="btn" href="https://www.basecampgetaways.com/property/endlessviews" target="_blank" rel="noopener">View &amp; Book Direct →</a>
+        </div>
+      </div>
+      <div class="subhead"><h3>Lake Chatuge · Hiawassee</h3></div>
+
+      <div class="card" data-guests="7">
+        <div class="ph" style="background-image:url('https://a0.muscache.com/im/pictures/miso/Hosting-924880143466065115/original/9b4487af-c220-450d-be20-5743b425fe58.jpeg')"><span class="tag">Hiawassee · sleeps 7</span></div>
+        <div class="body">
+          <h3>River Run Retreat</h3>
+          <div class="meta">4 BR · 2 BA · up to 7 guests</div>
+          <div class="desc">Riverside retreat near Lake Chatuge and Young Harris — fishing, paddling, and golf close by.</div>
+          <a class="btn" href="https://www.basecampgetaways.com/property/riverrunretreat" target="_blank" rel="noopener">View &amp; Book Direct →</a>
+        </div>
+      </div>
+
+      <div class="card" data-guests="2">
+        <div class="ph" style="background-image:url('https://a0.muscache.com/im/pictures/miso/Hosting-924964707319548986/original/08888153-309e-4cc2-a1ff-7bd6ecf6305d.jpeg')"><span class="tag">Hiawassee · sleeps 2</span></div>
+        <div class="body">
+          <h3>River Run Studio</h3>
+          <div class="meta">Studio · 1 BA · up to 2 guests</div>
+          <div class="desc">A cozy couples&#x27; studio on the same riverside property — a quiet Lake Chatuge getaway.</div>
+          <a class="btn" href="https://www.basecampgetaways.com/property/riverrunretreatstudio" target="_blank" rel="noopener">View &amp; Book Direct →</a>
+        </div>
+      </div>
+    </div>
+    <p id="noresult" style="display:none;text-align:center;color:var(--muted);margin-top:20px">No cabins match that guest count — <a href="#owner">ask us</a> and we'll help you find a fit.</p>
+  </div>
+</section>
+<section class="block alt" id="lakes">
+  <div class="wrap">
+    <div class="shead"><div class="eyebrow">Lake Days</div><h2 class="serif">Three mountain lakes</h2><p>Clear, cool, and ringed by national forest — the Blue Ridge lakes are made for slow boat days, paddleboards, and swimming holes.</p></div>
+    <div class="feat">
+      <div class="fcard"><span class="pill">~3,290 acres · TVA</span><h3>Lake Blue Ridge</h3><p>The closest lake to town — emerald-clear water, mostly undeveloped national-forest shoreline, and a public marina. Great for pontoons, kayaks, and trout right below the dam.</p></div>
+      <div class="fcard"><span class="pill">~4,180 acres · Blairsville</span><h3>Lake Nottely</h3><p>About 40 minutes east near Blairsville — a quieter, sprawling lake known for bass, walleye, and crappie, with Poteete Creek Park and easy public ramps.</p></div>
+      <div class="fcard"><span class="pill">~7,050 acres · Hiawassee</span><h3>Lake Chatuge</h3><p>Straddling the GA/NC line near Hiawassee and Young Harris — postcard mountain backdrops, big open water, and our River Run cabins right nearby.</p></div>
+    </div>
+  </div>
+</section>
+<section class="block" id="fishing">
+  <div class="wrap">
+    <div class="shead"><div class="eyebrow">What's on the Water</div><h2 class="serif">Blue Ridge is trout country</h2><p>This isn't a bass-lake scene — it's one of the Southeast's premier <strong>fly-fishing</strong> destinations. The Toccoa River tailwater below Blue Ridge Dam runs cold and clear year-round, holding wild and stocked rainbows and browns. Always check flows before you wade.</p></div>
+    <div class="feat">
+      <div class="fcard"><span class="pill">Tailwater</span><h3>Toccoa River (Tailwater)</h3><p>Below Blue Ridge Dam: cold, dam-controlled water and the area's signature trout float. Flows swing with TVA generation — check the live cfs above before heading out.</p><a href="https://lakeinfo.tva.gov/blue-ridge" target="_blank" rel="noopener" style="font-weight:700;color:var(--gold2)">TVA generation →</a></div>
+      <div class="fcard"><span class="pill">Wild trout</span><h3>Headwaters &amp; Creeks</h3><p>The upper Toccoa, Noontootla Creek, Rock Creek, and Cooper Creek hold wild trout in the Aska Adventure Area and Chattahoochee forest — small water, big scenery.</p><a href="https://www.blueridgemountains.com/things-to-do/fishing/" target="_blank" rel="noopener" style="font-weight:700;color:var(--gold2)">Fishing guide →</a></div>
+      <div class="fcard"><span class="pill">Guides &amp; outfitters</span><h3>Book a Trip</h3><p>Cohutta Fishing Co. (downtown Blue Ridge), Reel 'Em In Guide Service, Blue Ridge Fly Fishing, and Unicoi Outfitters run guided floats and wade trips.</p><a href="https://www.google.com/maps/search/?api=1&amp;query=Cohutta+Fishing+Company+Blue+Ridge+GA" target="_blank" rel="noopener" style="font-weight:700;color:var(--gold2)">Find outfitters →</a></div>
+    </div>
+  </div>
+</section>
+<section class="block alt" id="guide">
+  <div class="wrap">
+    <div class="shead"><div class="eyebrow">Local Guide</div><h2 class="serif">Everything to do in Blue Ridge</h2><p>A complete, organized guide sourced from the official Blue Ridge Mountains tourism directory — things to do, dining, wineries, the outdoors, and more. Tap any spot for details or a map.</p></div>
+  </div>
+</section>
+<div class="guidenav"><div class="wrap"><div class="row"><a href="#cat-things-to-do">Things to Do</a> <a href="#cat-outdoors">Outdoor Adventure</a> <a href="#cat-scenic-railway">Blue Ridge Scenic Railway</a> <a href="#cat-dining">Food &amp; Drink</a> <a href="#cat-wineries-breweries">Wineries, Breweries &amp; Distilleries</a> <a href="#cat-family-fun">Family Fun</a> <a href="#cat-arts-culture">Arts &amp; Culture</a> <a href="#cat-shopping">Shopping</a> <a href="#cat-mountain-towns">Mountain Towns</a></div></div></div>
+<section class="block alt" style="padding-top:24px">
+  <div class="wrap">
+
+    <div class="catblock" id="cat-things-to-do">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/new-images/698495/jinx_jerry_mucklow_6d5a28fab3a97500d9da54404f03d33e.jpg')">
+        <div class="catbanner-in"><h3>Things to Do</h3><p>Ride the train, explore mountain towns and countryside, hike, fish, go rafting, or simply relax in Georgia&#x27;s Blue Ridge.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Blue Ridge Scenic Railway</h4>
+          <p>A four-hour railway excursion along the Toccoa River from Blue Ridge to McCaysville.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/blue-ridge-scenic-railway/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Blue+Ridge+Scenic+Railway+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Mountain Towns &amp; Countryside</h4>
+          <p>Fall in love with the charming mountain towns of Blue Ridge and McCaysville.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/mountain-towns/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Mountain+Towns+Countryside+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Arts &amp; Culture</h4>
+          <p>One of the top arts towns in Georgia and a Top Ten Craft Town in the country.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/arts-culture/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Arts+Culture+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Farms &amp; Orchards</h4>
+          <p>Visit the largest apple orchard in the state and other family-friendly farms.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/farms-orchards/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Farms+Orchards+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Scenic Drives &amp; Self-Guided Tours</h4>
+          <p>Drive in any direction from Blue Ridge for beautiful scenery and gorgeous views.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/scenic-drives-tours/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Scenic+Drives+Self+Guided+Tours+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Spas &amp; Wellness</h4>
+          <p>Plan time for rest, relaxation and rejuvenation at a local day spa.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/spas-wellness/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Spas+Wellness+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Itineraries</h4>
+          <p>Find ideas for special groups and gatherings, whether you have one day or a week.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/itineraries/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Itineraries+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-outdoors">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/archive/656510/FortMountainView1920x1080_91852798b59be8b28fc00edfe4aec23a.jpg')">
+        <div class="catbanner-in"><h3>Outdoor Adventure</h3><p>Mountain trails, rushing rivers, and sparkling lakes create endless opportunities for adventure.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Hiking</h4>
+          <p>Discover more than 300 miles of trails, including the start of the Appalachian Trail.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/hiking/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Hiking+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Waterfalls</h4>
+          <p>A waterfall chaser&#x27;s dream, with stunning falls tucked away in the surrounding forests.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/blog/16-waterfalls-within-an-hour-of-br/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Waterfalls+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Fishing</h4>
+          <p>Cast a line in the Trout Fishing Capital of Georgia along 100 miles of trout streams.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/fishing/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Fishing+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Water Sports</h4>
+          <p>Splash through Blue Ridge with whitewater rafting, tubing, kayaking, and stand-up paddling.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/water-sports/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Water+Sports+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Biking</h4>
+          <p>Ride along paved roads, gravel paths, and thrilling single tracks while cycling or mountain biking.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/biking/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Biking+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Horseback Riding</h4>
+          <p>Set out on a horseback ride along mountain trails and rolling hills with experienced guides.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/horseback-riding/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Horseback+Riding+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Golf</h4>
+          <p>Tee off at mountain courses designed to challenge players with elevation changes and bunkering.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/golf/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Golf+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Parks &amp; Campgrounds</h4>
+          <p>Find recreation areas for camping, swimming, fishing, boating and picnicking.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/parks-campgrounds/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Parks+Campgrounds+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Swinging Bridge on the Toccoa River</h4>
+          <p>Stroll across the iconic swinging bridge over the Toccoa River.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/hiking/swinging-bridge/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Swinging+Bridge+on+the+Toccoa+River+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Chattahoochee National Forest</h4>
+          <p>Explore 106,000 acres of national forest surrounding Blue Ridge.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/hiking/chattahoochee-national-forest/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Chattahoochee+National+Forest+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Appalachian Trail</h4>
+          <p>Hike the legendary Appalachian Trail from its southern terminus at Springer Mountain.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/hiking/appalachian-trail/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Appalachian+Trail+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Ocoee Whitewater Center</h4>
+          <p>Take on the thrilling rapids of the nearby Ocoee River.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/water-sports/ocoee-whitewater-center/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Ocoee+Whitewater+Center+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-scenic-railway">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/archive/655826/BRSR-New-JM_91852798b59be8b28fc00edfe4aec23a.jpg')">
+        <div class="catbanner-in"><h3>Blue Ridge Scenic Railway</h3><p>Step back in time on a four-hour railway excursion along the Toccoa River from Blue Ridge to McCaysville.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Toccoa River Train Excursion</h4>
+          <p>A 26-mile round trip with a two-hour layover in McCaysville, running March through December.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/blue-ridge-scenic-railway/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Toccoa+River+Train+Excursion+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Stand in Two States at the Blue Line</h4>
+          <p>Cross the Blue Line in McCaysville to stand in Georgia and Tennessee at once.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/mountain-towns/mccaysville/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Stand+in+Two+States+at+the+Blue+Line+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Fall Foliage Rides</h4>
+          <p>Ranked a top-five attraction for fall color by Southern Living; rides run October to mid-November.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/blue-ridge-scenic-railway/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Fall+Foliage+Rides+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Santa Trains &amp; Seasonal Excursions</h4>
+          <p>Seasonal trains include the Firecracker Special, Santa Trains and the New Year&#x27;s Eve Excursion.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/blue-ridge-scenic-railway/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Santa+Trains+Seasonal+Excursions+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-dining">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/1081470/RestaurantSteakHero_91852798b59be8b28fc00edfe4aec23a.jpg')">
+        <div class="catbanner-in"><h3>Food &amp; Drink</h3><p>Local food is an essential part of any trip to Georgia&#x27;s Blue Ridge, from casual upscale dining to Southern style.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Casual Upscale Dining</h4>
+          <p>Relax with a great meal at Blue Ridge&#x27;s casual-yet-refined mountain-comfort restaurants.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/casual-upscale-dining/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Casual+Upscale+Dining+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Southern Style Restaurants</h4>
+          <p>Enjoy Southern comfort cooking at Blue Ridge&#x27;s down-home eateries.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/southern-style-restaurants/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Southern+Style+Restaurants+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Barbecue</h4>
+          <p>Dig into smoked meats and classic barbecue around Blue Ridge.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/barbecue/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Barbecue+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Pizza &amp; Italian</h4>
+          <p>Find pizza and Italian favorites in town.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/pizza-italian/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Pizza+Italian+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Mexican Restaurants</h4>
+          <p>Sample Mexican fare across the Blue Ridge area.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/mexican-restaurants/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Mexican+Restaurants+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Seafood</h4>
+          <p>Reel in fresh seafood at local restaurants.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/seafood/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Seafood+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Breakfast</h4>
+          <p>Start your day at Blue Ridge breakfast spots and diners.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/breakfast/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Breakfast+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Bars &amp; Pubs</h4>
+          <p>Catch nightlife and drinks at Blue Ridge bars and pubs.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/bars-pubs/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Bars+Pubs+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Coffee &amp; Tea</h4>
+          <p>Grab a cup at the area&#x27;s coffee and tea shops.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/coffee-tea/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Coffee+Tea+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Dessert Places &amp; Bakeries</h4>
+          <p>Treat yourself at bakeries and dessert shops, including Cupcake Wars winner The Sweet Shoppe.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/food-drink/bakeries-dessert/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Dessert+Places+Bakeries+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-wineries-breweries">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/788956/Vineyard1_2023-01-31-174335_fhcw_91852798b59be8b28fc00edfe4aec23a.jpeg')">
+        <div class="catbanner-in"><h3>Wineries, Breweries &amp; Distilleries</h3><p>Sip some great local wines and craft beer at the area&#x27;s vineyards, breweries and distilleries.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Bear Claw Vineyards</h4>
+          <p>A densely planted vineyard known for breathtaking mountain views and the Blue Ridge Treehouse.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/bear-claw-vineyards/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Bear+Claw+Vineyards+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Mercier Orchards</h4>
+          <p>The only Georgia apple orchard that grows, presses, ferments and bottles its own hard cider and farm wines.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/mercier-orchards/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Mercier+Orchards+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Kerith House</h4>
+          <p>A boutique 124-acre farm and winery offering tastings, food, private events and accommodations.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/kerith-house/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Kerith+House+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Grumpy Old Men Brewing</h4>
+          <p>A nano brewery and home of the world-famous Moon Over Blue Ridge Wheat ale.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/grumpy-old-men-brewing/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Grumpy+Old+Men+Brewing+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Angry Hops Brewery</h4>
+          <p>Located in the heart of Blue Ridge, known for innovative brews and a laid-back vibe.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/angry-hops-brewing/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Angry+Hops+Brewery+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Tipping Point Brewing Co.</h4>
+          <p>Craft brews and seltzers with a scenic second-story patio overlooking downtown Blue Ridge.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/tipping-point-brewing-co/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Tipping+Point+Brewing+Co++Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Copperhill Brewery</h4>
+          <p>Small-batch beer and spirits named for the area&#x27;s rivers, with a patio overlooking the Ocoee River.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/copperhill-brewery/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Copperhill+Brewery+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Buck Bald Brewing</h4>
+          <p>Mountain-born brewery dedicated to high-quality beer like Ragin&#x27; Red Ale and Hollerin&#x27; Man Pale Ale.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/buck-bald-brewing/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Buck+Bald+Brewing+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Ocoee River Distilling</h4>
+          <p>A unique brewstillery in Ducktown with a spacious taproom and food truck.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/ocoee-river-distilling/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Ocoee+River+Distilling+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Grandaddy Mimm&#x27;s Distilling Co.</h4>
+          <p>Family-owned distillery crafting small-batch spirits featuring an original moonshine recipe.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/grandaddy-mimms-distillery/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Grandaddy+Mimm+s+Distilling+Co++Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>House of Applejay Distillery</h4>
+          <p>Female-owned Ellijay distillery best known for The Applejay liqueur.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/house-of-applejay-distillery/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=House+of+Applejay+Distillery+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Grapes and Ladders Winery</h4>
+          <p>Family-owned vineyard and tasting room with wine, live music and peaceful rolling views.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/grapes-and-ladders-winery/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Grapes+and+Ladders+Winery+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Living Water Winery &amp; Vineyard</h4>
+          <p>Sip estate-grown wine or craft beer with dramatic panoramic mountain views on a 70-acre farm.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/living-water-winery-vineyard/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Living+Water+Winery+Vineyard+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Nottely River Valley Vineyards</h4>
+          <p>Family-owned vineyard and winery on a 93-acre farm in the family since 1820.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/nottely-river-valley-vineyards/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Nottely+River+Valley+Vineyards+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Ott Vineyards and Winery</h4>
+          <p>Ellijay vineyard on 7+ acres with French-American hybrid grapes and a vaulted pavilion tasting room.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/ott-vineyards-and-winery/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Ott+Vineyards+and+Winery+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Paradise Hills Winery Resort &amp; Spa</h4>
+          <p>A 35-acre winery resort near Blairsville with vineyards, lodge and spa.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/paradise-hills-winery-resort-spa/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Paradise+Hills+Winery+Resort+Spa+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Redtail Mountain Vineyards</h4>
+          <p>Family-owned vineyard in the Upper Hiwassee Highlands AVA producing award-winning wines.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/redtail-mountain-vineyard/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Redtail+Mountain+Vineyards+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Roo Mountain Vineyards</h4>
+          <p>Comfortable-luxury destination four miles from downtown Ellijay with pristine foothill views.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/roo-mountain-vineyards/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Roo+Mountain+Vineyards+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Blairsville Brewing Company</h4>
+          <p>Small family-owned brewery committed to using only the freshest, highest-quality ingredients.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/blairsville-brewing-company/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Blairsville+Brewing+Company+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-family-fun">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/1005314/Kids-train-wave-hero_2025-03-03-165636_vrcv_91852798b59be8b28fc00edfe4aec23a.jpg')">
+        <div class="catbanner-in"><h3>Family Fun</h3><p>There&#x27;s so much to do here with kids, they&#x27;ll never be bored.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Ride the Blue Ridge Scenic Railway</h4>
+          <p>Take the whole family on a scenic four-hour train excursion along the Toccoa River.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/blue-ridge-scenic-railway/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Ride+the+Blue+Ridge+Scenic+Railway+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Gem Mining &amp; Geocaching</h4>
+          <p>Go gem mining or geocaching for treasures in the Blue Ridge Mountains.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/blog/geocaching-in-the-blue-ridge-mountains/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Gem+Mining+Geocaching+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Apple Picking at Mercier Orchards</h4>
+          <p>Pick apples and enjoy farm fun at the largest apple orchard in Georgia.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/farms-orchards/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Apple+Picking+at+Mercier+Orchards+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Tubing &amp; Rafting</h4>
+          <p>Go tubing or whitewater rafting on the rivers that surround Blue Ridge.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/outdoors/water-sports/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Tubing+Rafting+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>30 Fun Things to Do with Kids</h4>
+          <p>Blue Ridge is filled with fun activities that are natural and unique.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/blog/30-fun-things-to-do-with-kids/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=30+Fun+Things+to+Do+with+Kids+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Trout Art Trail Kids Game</h4>
+          <p>A fun self-guided art trail game for kids exploring downtown.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/blog/trout-art-trail-kids-game/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Trout+Art+Trail+Kids+Game+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-arts-culture">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/archive/website-resized-heros-and-pix/658110/ArtistNoontootla700_91852798b59be8b28fc00edfe4aec23a.jpg')">
+        <div class="catbanner-in"><h3>Arts &amp; Culture</h3><p>Blue Ridge is one of the top arts towns in Georgia, drawing artists, potters, and musicians.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Blue Ridge Mountains Arts Association &amp; The Art Center</h4>
+          <p>Historic courthouse art center with studios, five galleries, guilds and the Arts in the Park festivals.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/blue-ridge-mountains-arts-association-the-art-center/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Blue+Ridge+Mountains+Arts+Association+The+Art+Center+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Blue Ridge Community Theater</h4>
+          <p>A playhouse hosting dozens of stage productions and the Live Music is Better acoustic series.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/events/the-miracle-worker-blue-ridge-community-theater/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Blue+Ridge+Community+Theater+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Swan Drive-In Theatre</h4>
+          <p>A classic drive-in movie theater showing double features Thursday through Sunday.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/events/swan-drive-in-now-playing/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Swan+Drive+In+Theatre+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Pickin in the Park</h4>
+          <p>Weekly free casual acoustic jam sessions along the Toccoa River at Horseshoe Bend Park.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/arts-culture/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Pickin+in+the+Park+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>John C. Campbell Folk School</h4>
+          <p>Brasstown, NC venue with Friday folk, bluegrass and old-time mountain music concerts.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/arts-culture/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=John+C+Campbell+Folk+School+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Georgia Mountain Fairgrounds</h4>
+          <p>Hiawassee venue hosting the Georgia Mountain Fair, wine and jazz festival and concert series.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/arts-culture/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Georgia+Mountain+Fairgrounds+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-shopping">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/788839/Shopping_91852798b59be8b28fc00edfe4aec23a.jpg')">
+        <div class="catbanner-in"><h3>Shopping</h3><p>Shop specialty boutiques, galleries and antique stores; Blue Ridge is a Top Ten Town for Craft Lovers.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>4 Elements Art</h4>
+          <p>A fine art gallery in downtown Blue Ridge.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/4-elements-art/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=4+Elements+Art+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>High Country Art</h4>
+          <p>Fine art gallery showcasing local artists in downtown Blue Ridge.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/high-country-art/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=High+Country+Art+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Multitudes Gallery</h4>
+          <p>A downtown Blue Ridge gallery featuring a variety of fine art.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/multitudes-gallery/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Multitudes+Gallery+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>The Art Center (BRMAA)</h4>
+          <p>Galleries and studios on West Main run by the Blue Ridge Mountains Arts Association.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/blue-ridge-mountains-arts-association-the-art-center/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Art+Center+BRMAA++Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Oyster Fine Bamboo Fly Rods</h4>
+          <p>Internationally recognized craftsman Bill Oyster&#x27;s handcrafted bamboo fly rods and sold-out classes.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/oyster-fine-bamboo-fly-rods/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Oyster+Fine+Bamboo+Fly+Rods+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>The Sweet Shoppe of Blue Ridge</h4>
+          <p>Food Network Cupcake Wars winner with incredible cupcakes and handmade candies.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/the-sweet-shoppe-of-the-south/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Sweet+Shoppe+of+Blue+Ridge+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Mercier Orchards (Market)</h4>
+          <p>Take home apple cider doughnuts, fried pies and apple bread made from scratch.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/directory/mercier-orchards/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Mercier+Orchards+Market++Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>Pezrok</h4>
+          <p>A unique shop featuring furniture and decor made from rocks and minerals.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/blog/12-unique-shops-in-georgias-blue-ridge/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Pezrok+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="catblock" id="cat-mountain-towns">
+      <div class="catbanner" style="background-image:url('https://www.blueridgemountains.com/imager/cmsimages/new-images/698495/jinx_jerry_mucklow_6d5a28fab3a97500d9da54404f03d33e.jpg')">
+        <div class="catbanner-in"><h3>Mountain Towns</h3><p>Fall in love with the mountain towns of Blue Ridge, McCaysville and the Copper Basin.</p></div>
+      </div>
+      <div class="glist">
+        <div class="gitem">
+          <h4>Blue Ridge</h4>
+          <p>A historic railroad town with a depot at its heart, Main Street shops and galleries.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/mountain-towns/blue-ridge/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Blue+Ridge+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+        <div class="gitem">
+          <h4>McCaysville</h4>
+          <p>A quaint river town and twin city with Copperhill, Tennessee, home to the Blue Line.</p>
+          <div class="glinks"><a href="https://www.blueridgemountains.com/things-to-do/mountain-towns/mccaysville/" target="_blank" rel="noopener">Details →</a><a href="https://www.google.com/maps/search/?api=1&amp;query=McCaysville+Blue+Ridge+GA" target="_blank" rel="noopener">Map →</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="block" id="events">
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">What's Happening</div>
+      <h2 class="serif">Live Blue Ridge events calendar</h2>
+      <p>Upcoming festivals, live music, theater, and seasonal happenings across Blue Ridge — pulled from the official tourism calendar and refreshed weekly.</p>
+      <div style="margin-top:12px"><span class="livebadge"><span class="livedot"></span>Auto-updated · last refreshed August 3, 2026</span></div>
+    </div>
+      <h3 class="ev-month">July 2026</h3> 
+      <div class="evgrid"> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/lake-blue-ridge-fireworks/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">JUL</span><span class="ev-day">4</span></div>
+          <div class="ev-body"><div class="ev-title">Lake Blue Ridge Fireworks</div><div class="ev-meta">Jul 4, 2027 · Lake Blue Ridge Dam, Blue Ridge, GA 30513</div></div>
+        </a> 
+      </div> 
+      <h3 class="ev-month">August 2026</h3> 
+      <div class="evgrid"> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/kiwanis-rodeo-kiwanis-club-of-blue-ridge/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">AUG</span><span class="ev-day">21</span></div>
+          <div class="ev-body"><div class="ev-title">Annual Kiwanis Rodeo</div><div class="ev-meta">Aug 21 — Aug 22 · Kiwanis Fairgrounds, Blue Ridge, 124 Jones Street, Blue Ridge, GA…</div></div>
+        </a> 
+      </div> 
+      <h3 class="ev-month">September 2026</h3> 
+      <div class="evgrid"> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/blue-ridge-blues-and-bbq-festival/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">SEP</span><span class="ev-day">19</span></div>
+          <div class="ev-body"><div class="ev-title">Blue Ridge Blues &amp; BBQ Festival</div><div class="ev-meta">Sep 19 · Downtown Blue Ridge, 420 West Main Street, Blue Ridge, GA 30513</div></div>
+        </a> 
+      </div> 
+      <h3 class="ev-month">October 2026</h3> 
+      <div class="evgrid"> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/fall-arts-in-the-park/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">OCT</span><span class="ev-day">10</span></div>
+          <div class="ev-body"><div class="ev-title">Fall Arts in the Park — Blue Ridge</div><div class="ev-meta">Oct 10 — Oct 11 · Downtown Blue Ridge, Blue Ridge, GA 30513</div></div>
+        </a> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/blue-ridge-mountains-parade-of-homes-2/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">OCT</span><span class="ev-day">16</span></div>
+          <div class="ev-body"><div class="ev-title">Blue Ridge Mountains Parade of Homes</div><div class="ev-meta">Oct 16 · Check in: SouthState Bank, 59 Orvin Lance Drive, Blue Ridge, GA 30513</div></div>
+        </a> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/pawsfest-humane-society-of-blue-ridge/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">OCT</span><span class="ev-day">17</span></div>
+          <div class="ev-body"><div class="ev-title">Blue Ridge’s Annual Pawsfest</div><div class="ev-meta">Oct 17 · Downtown Blue Ridge, East Main Street, Blue Ridge, GA 30513</div></div>
+        </a> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/ride-the-rails-tri-state-model-railroaders/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">OCT</span><span class="ev-day">24</span></div>
+          <div class="ev-body"><div class="ev-title">Ride The Rails — Tri State Model Railroaders</div><div class="ev-meta">Oct 24 · Historic L&amp;N Depot, 150 Railroad Avenue, Mineral Bluff, GA 30559</div></div>
+        </a> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/halloween-at-the-fairgrounds/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">OCT</span><span class="ev-day">30</span></div>
+          <div class="ev-body"><div class="ev-title">Halloween Trick or Treat at the Fairgrounds</div><div class="ev-meta">Oct 30 · Georgia Mountain Fairgrounds, 1311 Music Hall Rd., Hiawassee, GA 30546</div></div>
+        </a> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/halloween-safe-zone-blue-ridge/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">OCT</span><span class="ev-day">31</span></div>
+          <div class="ev-body"><div class="ev-title">Halloween Safe Zone Trick or Treat — Blue Ridge</div><div class="ev-meta">Oct 31 · Downtown Blue Ridge, 241 Depot Street, Blue Ridge, GA 30513</div></div>
+        </a> 
+      </div> 
+      <h3 class="ev-month">November 2026</h3> 
+      <div class="evgrid"> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/holiday-show-sale-blue-ridge-mountains-arts-association/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">NOV</span><span class="ev-day">15</span></div>
+          <div class="ev-body"><div class="ev-title">Holiday Market</div><div class="ev-meta">Nov 15 — Dec 19 · Blue Ridge Mountains Arts Association, 420 West Main Street, Blue…</div></div>
+        </a> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/light-up-blue-ridge/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">NOV</span><span class="ev-day">27</span></div>
+          <div class="ev-body"><div class="ev-title">Light Up Blue Ridge &amp; Christmas Parade</div><div class="ev-meta">Nov 27 — Nov 28 · Downtown Blue Ridge City Park, Blue Ridge, GA 30513</div></div>
+        </a> 
+        <a class="ev" href="https://www.blueridgemountains.com/events/light-up-mccaysville-/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">NOV</span><span class="ev-day">27</span></div>
+          <div class="ev-body"><div class="ev-title">Light Up McCaysville: Tree Lighting!</div><div class="ev-meta">Nov 27 · 100 Blue Ridge Drive, McCaysville, Georgia 30555</div></div>
+        </a> 
+      </div>
+    <p style="margin-top:22px"><a class="btn" href="https://www.blueridgemountains.com/events/" target="_blank" rel="noopener">See the full calendar →</a></p>
+  </div>
+</section>
+<section class="block alt" id="owner">
+  <div class="wrap"><div class="owner">
+    <div><div class="eyebrow" style="color:#e8cf94">Own a Blue Ridge Cabin?</div><h2 class="serif">Let our local team manage it.</h2><p>Basecamp Getaways handles full-service short-term rental management in Blue Ridge and across North Georgia — pricing, guests, cleaning, and maintenance, with owners kept in the loop.</p></div>
+    <a class="btn" href="https://www.basecampgetaways.com/" target="_blank" rel="noopener">Talk to Basecamp →</a>
+  </div></div>
+</section>
+<footer class="site"><div class="wrap">
+  <div class="cols">
+    <div style="max-width:320px"><a class="brand" href="#top" style="margin-bottom:8px"><img src="https://assets.craftedstays.co/oQqFN8faM3foYkBbda3UEMBAG0o2/0RlW7pplaYbum2AzPd1C/CV-5-NoBG-1772803499883.png" alt="Basecamp Getaways logo"><span class="bt" style="color:#fff">Blue Ridge Stays<small>by Basecamp Getaways</small></span></a><p style="color:#9fb6a6;font-size:13.5px;margin-top:10px">Direct-booking mountain cabins &amp; the complete local guide to Blue Ridge, Mineral Bluff &amp; Lake Chatuge, Georgia.</p></div>
+    <div><b style="color:#fff">Explore</b><br><a href="#homes">Cabins</a> · <a href="#lakes">The Lakes</a> · <a href="#fishing">Fly Fishing</a><br><a href="#guide">Local Guide</a> · <a href="#events">Events</a></div>
+    <div><b style="color:#fff">Plan</b><br><a href="https://www.blueridgemountains.com/" target="_blank" rel="noopener">Blue Ridge Mountains</a><br><a href="https://www.basecampgetaways.com/" target="_blank" rel="noopener">Basecamp Getaways</a><br><a href="#owner">List your cabin</a></div>
+  </div>
+  <div class="fine">© <span id="yr"></span> Basecamp Getaways · Blue Ridge Stays. Local guide &amp; events sourced from blueridgemountains.com. Live weather via Open-Meteo; Toccoa River flow via USGS 03559000; lake level via TVA.</div>
+</div></footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){var s=document.querySelectorAll('.hero .slide'),i=0;if(s.length<2)return;setInterval(function(){s[i].classList.remove('on');i=(i+1)%s.length;s[i].classList.add('on');},5000);})();
+function doSearch(){var g=parseInt(document.getElementById('gs').value||'0',10);var any=false;document.querySelectorAll('#cards .card').forEach(function(c){var cap=parseInt(c.dataset.guests||'0',10);var show=(g===0)||(cap>=g);c.style.display=show?'':'none';if(show)any=true;});document.getElementById('noresult').style.display=any?'none':'block';document.getElementById('homes').scrollIntoView({behavior:'smooth'});}
+(function(){var t=new Date().toISOString().slice(0,10);var ci=document.getElementById('ci'),co=document.getElementById('co');if(ci)ci.min=t;if(co)co.min=t;})();
+(function(){var url='https://api.open-meteo.com/v1/forecast?latitude=34.8645&longitude=-84.3242&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&temperature_unit=fahrenheit&wind_speed_unit=mph';fetch(url).then(r=>r.json()).then(function(d){var c=d.current||{};if(c.temperature_2m!=null)document.getElementById('c-temp').textContent=Math.round(c.temperature_2m)+'°F';if(c.wind_speed_10m!=null)document.getElementById('c-wind').textContent=Math.round(c.wind_speed_10m)+' mph';if(c.relative_humidity_2m!=null)document.getElementById('c-hum').textContent=Math.round(c.relative_humidity_2m)+'%';var codes={0:'Clear',1:'Mostly clear',2:'Partly cloudy',3:'Overcast',45:'Fog',48:'Fog',51:'Drizzle',53:'Drizzle',55:'Drizzle',61:'Light rain',63:'Rain',65:'Heavy rain',71:'Snow',73:'Snow',75:'Snow',80:'Showers',81:'Showers',82:'Showers',95:'Storms',96:'Storms',99:'Storms'};if(c.weather_code!=null)document.getElementById('c-sky').textContent=codes[c.weather_code]||'—';}).catch(function(){document.getElementById('c-temp').textContent='—';});})();
+(function(){var url='https://waterservices.usgs.gov/nwis/iv/?format=json&sites=03559000&parameterCd=00060&siteStatus=all';fetch(url).then(r=>r.json()).then(function(d){try{var v=d.value.timeSeries[0].values[0].value[0].value;document.getElementById('c-flow').textContent=Math.round(parseFloat(v)).toLocaleString()+' cfs';}catch(e){document.getElementById('c-flow').innerHTML='<a href="https://waterdata.usgs.gov/monitoring-location/03559000/" target="_blank" rel="noopener">USGS →</a>';}}).catch(function(){document.getElementById('c-flow').innerHTML='<a href="https://waterdata.usgs.gov/monitoring-location/03559000/" target="_blank" rel="noopener">USGS →</a>';});})();
+</script>
+</body>
+</html>
