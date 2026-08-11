@@ -116,19 +116,21 @@ section.block.alt{background:var(--paper)}
 /* owner + footer */
 .owner{background:var(--pine);color:#fff;border-radius:22px;padding:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
 .owner h2{margin:0 0 8px;color:#fff}.owner p{margin:0;color:#cfe0d4;max-width:560px}
-.ownergrid{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:start}
-@media(max-width:820px){.ownergrid{grid-template-columns:1fr}}
+.ownergrid{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+@media(max-width:900px){.ownergrid{grid-template-columns:1fr}}
 .ownlist{list-style:none;margin:0;padding:0;display:grid;gap:13px}
 .ownlist li{position:relative;padding-left:32px;font-size:15px;color:#3f4d47;line-height:1.45}
-.ownlist li:before{content:"\\2713";position:absolute;left:0;top:1px;width:21px;height:21px;background:var(--moss);color:#fff;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.ownlist li:before{content:"\2713";position:absolute;left:0;top:1px;width:21px;height:21px;background:var(--moss);color:#fff;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
 .ownlist li b{color:var(--pine)}
-.ownercta{background:var(--pine);color:#fff;border-radius:18px;padding:28px;box-shadow:var(--shadow)}
-.ownercta h3{margin:0 0 6px;color:#fff;font-size:24px}
-.ownercta p{margin:0 0 18px;color:#cfe0d4;font-size:14px}
-.ownercta .btn{display:block;text-align:center;margin-bottom:11px}
-.btn-ghost2{background:transparent;border:1.5px solid rgba(255,255,255,.55);color:#fff}
-.btn-ghost2:hover{background:rgba(255,255,255,.14)}
-.formbox{background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:var(--shadow);overflow:hidden}
+.ownbtns{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn-ghost3{background:#fff;border:1.5px solid var(--pine);color:var(--pine)}
+.btn-ghost3:hover{background:var(--pine);color:#fff}
+.formcard{border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);background:#fff}
+.formcard .fh{background:var(--pine);color:#fff;padding:22px 24px}
+.formcard .fh .eyebrow{color:#e8cf94}
+.formcard .fh h3{margin:6px 0 6px;color:#fff;font-size:22px}
+.formcard .fh p{margin:0;color:#cfe0d4;font-size:14px}
+.formcard .fb{padding:6px}
 footer.site{background:var(--pine2);color:#cdd8cf;padding:40px 0;font-size:14px}
 footer.site .cols{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
 footer.site a{color:#e7eee7}
@@ -798,30 +800,32 @@ footer.site a{color:#e7eee7}
       <p>Most Blue Ridge owners are leaving money on the table with a generic manager or a high-fee national brand. Basecamp Getaways is a local, owner-first team — we run your cabin like the asset it is and send commission-free direct bookings straight to you through this site.</p>
     </div>
     <div class="ownergrid">
-      <ul class="ownlist">
-        <li><b>AI-powered dynamic pricing</b> — daily rate adjustments that capture peak season and fill the shoulder months.</li>
-        <li><b>Everywhere your guests look</b> — Airbnb, VRBO, and commission-free direct booking on blueridgegastays.com.</li>
-        <li><b>100% keyless entry</b> — no lockboxes, no key handoffs, no coordination headaches.</li>
-        <li><b>Photography &amp; listing copy that converts</b> browsers into booked nights.</li>
-        <li><b>Guest screening, 24/7 messaging,</b> and 5-star review management.</li>
-        <li><b>Transparent, lower fees</b> — you always know exactly what you're earning.</li>
-        <li><b>Local care team</b> for inspections, turnovers, and fast on-site response.</li>
-        <li><b>Monthly owner statements</b> with a full revenue breakdown — we think like asset owners.</li>
-      </ul>
-      <div class="ownercta">
-        <h3 class="serif">Let's talk.</h3>
-        <p>See what your cabin could earn in Blue Ridge — no pressure, no obligation.</p>
-        <a class="btn" href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o" target="_blank" rel="noopener">Schedule a Call →</a>
-        <a class="btn btn-ghost2" href="case-studies.html">See Case Studies →</a>
+      <div>
+        <ul class="ownlist">
+          <li><b>AI-powered dynamic pricing</b> — daily rate adjustments that capture peak season and fill the shoulder months.</li>
+          <li><b>Everywhere your guests look</b> — Airbnb, VRBO, and commission-free direct booking on blueridgegastays.com.</li>
+          <li><b>100% keyless entry</b> — no lockboxes, no key handoffs, no coordination headaches.</li>
+          <li><b>Photography &amp; listing copy that converts</b> browsers into booked nights.</li>
+          <li><b>Guest screening, 24/7 messaging,</b> and 5-star review management.</li>
+          <li><b>Transparent, lower fees</b> — you always know exactly what you're earning.</li>
+          <li><b>Local care team</b> for inspections, turnovers, and fast on-site response.</li>
+          <li><b>Monthly owner statements</b> with a full revenue breakdown — we think like asset owners.</li>
+        </ul>
+        <div class="ownbtns">
+          <a class="btn" href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o" target="_blank" rel="noopener">Schedule a Call →</a>
+          <a class="btn btn-ghost3" href="case-studies.html">See Case Studies →</a>
+        </div>
       </div>
-    </div>
-    <div class="shead" style="margin-top:44px;margin-bottom:16px">
-      <div class="eyebrow">Free &amp; No Obligation</div>
-      <h2 class="serif" style="font-size:30px">Get your free revenue projection</h2>
-      <p>Tell us about your cabin and we'll send back a custom Blue Ridge earnings estimate.</p>
-    </div>
-    <div class="formbox">
-      <iframe src="https://link.basecampgetaways.com/widget/form/qVfRSODy12KKV9R82IZs" style="width:100%;height:920px;border:none;border-radius:8px" id="inline-qVfRSODy12KKV9R82IZs" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Basecamp Getaways Management " data-height="892" data-layout-iframe-id="inline-qVfRSODy12KKV9R82IZs" data-form-id="qVfRSODy12KKV9R82IZs" title="Basecamp Getaways Management "></iframe>
+      <div class="formcard">
+        <div class="fh">
+          <div class="eyebrow">Free &amp; No Obligation</div>
+          <h3 class="serif">Get your free revenue projection</h3>
+          <p>Tell us about your cabin and we'll send back a custom Blue Ridge earnings estimate.</p>
+        </div>
+        <div class="fb">
+          <iframe src="https://link.basecampgetaways.com/widget/form/qVfRSODy12KKV9R82IZs" style="width:100%;height:900px;border:none;border-radius:8px" id="inline-qVfRSODy12KKV9R82IZs" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Basecamp Getaways Management " data-height="892" data-layout-iframe-id="inline-qVfRSODy12KKV9R82IZs" data-form-id="qVfRSODy12KKV9R82IZs" title="Basecamp Getaways Management "></iframe>
+        </div>
+      </div>
     </div>
   </div>
 </section>
