@@ -116,6 +116,19 @@ section.block.alt{background:var(--paper)}
 /* owner + footer */
 .owner{background:var(--pine);color:#fff;border-radius:22px;padding:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
 .owner h2{margin:0 0 8px;color:#fff}.owner p{margin:0;color:#cfe0d4;max-width:560px}
+.ownergrid{display:grid;grid-template-columns:1.35fr 1fr;gap:26px;align-items:start}
+@media(max-width:820px){.ownergrid{grid-template-columns:1fr}}
+.ownlist{list-style:none;margin:0;padding:0;display:grid;gap:13px}
+.ownlist li{position:relative;padding-left:32px;font-size:15px;color:#3f4d47;line-height:1.45}
+.ownlist li:before{content:"\\2713";position:absolute;left:0;top:1px;width:21px;height:21px;background:var(--moss);color:#fff;border-radius:50%;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center}
+.ownlist li b{color:var(--pine)}
+.ownercta{background:var(--pine);color:#fff;border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+.ownercta h3{margin:0 0 6px;color:#fff;font-size:24px}
+.ownercta p{margin:0 0 18px;color:#cfe0d4;font-size:14px}
+.ownercta .btn{display:block;text-align:center;margin-bottom:11px}
+.btn-ghost2{background:transparent;border:1.5px solid rgba(255,255,255,.55);color:#fff}
+.btn-ghost2:hover{background:rgba(255,255,255,.14)}
+.formbox{background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px;box-shadow:var(--shadow);overflow:hidden}
 footer.site{background:var(--pine2);color:#cdd8cf;padding:40px 0;font-size:14px}
 footer.site .cols{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
 footer.site a{color:#e7eee7}
@@ -709,13 +722,13 @@ footer.site a{color:#e7eee7}
       <div class="eyebrow">What's Happening</div>
       <h2 class="serif">Live Blue Ridge events calendar</h2>
       <p>Upcoming festivals, live music, theater, and seasonal happenings across Blue Ridge — pulled from the official tourism calendar and refreshed weekly.</p>
-      <div style="margin-top:12px"><span class="livebadge"><span class="livedot"></span>Auto-updated · last refreshed August 3, 2026</span></div>
+      <div style="margin-top:12px"><span class="livebadge"><span class="livedot"></span>Auto-updated · last refreshed August 11, 2026</span></div>
     </div>
       <h3 class="ev-month">July 2026</h3> 
       <div class="evgrid"> 
-        <a class="ev" href="https://www.blueridgemountains.com/events/lake-blue-ridge-fireworks/" target="_blank" rel="noopener">
-          <div class="ev-date"><span class="ev-mo">JUL</span><span class="ev-day">4</span></div>
-          <div class="ev-body"><div class="ev-title">Lake Blue Ridge Fireworks</div><div class="ev-meta">Jul 4, 2027 · Lake Blue Ridge Dam, Blue Ridge, GA 30513</div></div>
+        <a class="ev" href="https://www.blueridgemountains.com/events/copper-basin-fireworks-mccaysville-copperhill/" target="_blank" rel="noopener">
+          <div class="ev-date"><span class="ev-mo">JUL</span><span class="ev-day">3</span></div>
+          <div class="ev-body"><div class="ev-title">McCaysville and the Copper Basin Independence Day Celebrations &amp; Fireworks</div><div class="ev-meta">Jul 3, 2027 · Downtown McCaysville and Copperhill, 100 Blue Ridge Drive,…</div></div>
         </a> 
       </div> 
       <h3 class="ev-month">August 2026</h3> 
@@ -767,7 +780,7 @@ footer.site a{color:#e7eee7}
         </a> 
         <a class="ev" href="https://www.blueridgemountains.com/events/light-up-blue-ridge/" target="_blank" rel="noopener">
           <div class="ev-date"><span class="ev-mo">NOV</span><span class="ev-day">27</span></div>
-          <div class="ev-body"><div class="ev-title">Light Up Blue Ridge &amp; Christmas Parade</div><div class="ev-meta">Nov 27 — Nov 28 · Downtown Blue Ridge City Park, Blue Ridge, GA 30513</div></div>
+          <div class="ev-body"><div class="ev-title">Light Up Blue Ridge &amp; Christmas Parade</div><div class="ev-meta">Nov 27 — Nov 28 · Downtown, Blue Ridge City Park, Blue Ridge, GA 30513</div></div>
         </a> 
         <a class="ev" href="https://www.blueridgemountains.com/events/light-up-mccaysville-/" target="_blank" rel="noopener">
           <div class="ev-date"><span class="ev-mo">NOV</span><span class="ev-day">27</span></div>
@@ -778,16 +791,45 @@ footer.site a{color:#e7eee7}
   </div>
 </section>
 <section class="block alt" id="owner">
-  <div class="wrap"><div class="owner">
-    <div><div class="eyebrow" style="color:#e8cf94">Own a Blue Ridge Cabin?</div><h2 class="serif">Let our local team manage it.</h2><p>Basecamp Getaways handles full-service short-term rental management in Blue Ridge and across North Georgia — pricing, guests, cleaning, and maintenance, with owners kept in the loop.</p></div>
-    <a class="btn" href="https://www.basecampgetaways.com/" target="_blank" rel="noopener">Talk to Basecamp →</a>
-  </div></div>
+  <div class="wrap">
+    <div class="shead">
+      <div class="eyebrow">Own a Blue Ridge Cabin?</div>
+      <h2 class="serif">More nights booked. Higher rates. Zero hassle.</h2>
+      <p>Most Blue Ridge owners are leaving money on the table with a generic manager or a high-fee national brand. Basecamp Getaways is a local, owner-first team — we run your cabin like the asset it is and send commission-free direct bookings straight to you through this site.</p>
+    </div>
+    <div class="ownergrid">
+      <ul class="ownlist">
+        <li><b>AI-powered dynamic pricing</b> — daily rate adjustments that capture peak season and fill the shoulder months.</li>
+        <li><b>Everywhere your guests look</b> — Airbnb, VRBO, and commission-free direct booking on blueridgegastays.com.</li>
+        <li><b>100% keyless entry</b> — no lockboxes, no key handoffs, no coordination headaches.</li>
+        <li><b>Photography &amp; listing copy that converts</b> browsers into booked nights.</li>
+        <li><b>Guest screening, 24/7 messaging,</b> and 5-star review management.</li>
+        <li><b>Transparent, lower fees</b> — you always know exactly what you're earning.</li>
+        <li><b>Local care team</b> for inspections, turnovers, and fast on-site response.</li>
+        <li><b>Monthly owner statements</b> with a full revenue breakdown — we think like asset owners.</li>
+      </ul>
+      <div class="ownercta">
+        <h3 class="serif">Let's talk.</h3>
+        <p>See what your cabin could earn in Blue Ridge — no pressure, no obligation.</p>
+        <a class="btn" href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o" target="_blank" rel="noopener">Schedule a Call →</a>
+        <a class="btn btn-ghost2" href="case-studies.html">See Case Studies →</a>
+      </div>
+    </div>
+    <div class="shead" style="margin-top:44px;margin-bottom:16px">
+      <div class="eyebrow">Free &amp; No Obligation</div>
+      <h2 class="serif" style="font-size:30px">Get your free revenue projection</h2>
+      <p>Tell us about your cabin and we'll send back a custom Blue Ridge earnings estimate.</p>
+    </div>
+    <div class="formbox">
+      <iframe src="https://link.basecampgetaways.com/widget/form/qVfRSODy12KKV9R82IZs" style="width:100%;height:920px;border:none;border-radius:8px" id="inline-qVfRSODy12KKV9R82IZs" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Basecamp Getaways Management " data-height="892" data-layout-iframe-id="inline-qVfRSODy12KKV9R82IZs" data-form-id="qVfRSODy12KKV9R82IZs" title="Basecamp Getaways Management "></iframe>
+    </div>
+  </div>
 </section>
 <footer class="site"><div class="wrap">
   <div class="cols">
     <div style="max-width:320px"><a class="brand" href="#top" style="margin-bottom:8px"><img src="https://assets.craftedstays.co/oQqFN8faM3foYkBbda3UEMBAG0o2/0RlW7pplaYbum2AzPd1C/CV-5-NoBG-1772803499883.png" alt="Basecamp Getaways logo"><span class="bt" style="color:#fff">Blue Ridge Stays<small>by Basecamp Getaways</small></span></a><p style="color:#9fb6a6;font-size:13.5px;margin-top:10px">Direct-booking mountain cabins &amp; the complete local guide to Blue Ridge, Mineral Bluff &amp; Lake Chatuge, Georgia.</p></div>
     <div><b style="color:#fff">Explore</b><br><a href="#homes">Cabins</a> · <a href="#lakes">The Lakes</a> · <a href="#fishing">Fly Fishing</a><br><a href="#guide">Local Guide</a> · <a href="#events">Events</a></div>
-    <div><b style="color:#fff">Plan</b><br><a href="https://www.blueridgemountains.com/" target="_blank" rel="noopener">Blue Ridge Mountains</a><br><a href="https://www.basecampgetaways.com/" target="_blank" rel="noopener">Basecamp Getaways</a><br><a href="#owner">List your cabin</a></div>
+    <div><b style="color:#fff">Plan</b><br><a href="https://www.blueridgemountains.com/" target="_blank" rel="noopener">Blue Ridge Mountains</a><br><a href="https://www.basecampgetaways.com/" target="_blank" rel="noopener">Basecamp Getaways</a><br><a href="#owner">List your cabin</a> · <a href="case-studies.html">Case studies</a></div>
   </div>
   <div class="fine">© <span id="yr"></span> Basecamp Getaways · Blue Ridge Stays. Local guide &amp; events sourced from blueridgemountains.com. Live weather via Open-Meteo; Toccoa River flow via USGS 03559000; lake level via TVA.</div>
 </div></footer>
@@ -799,5 +841,6 @@ function doSearch(){var g=parseInt(document.getElementById('gs').value||'0',10);
 (function(){var url='https://api.open-meteo.com/v1/forecast?latitude=34.8645&longitude=-84.3242&current=temperature_2m,relative_humidity_2m,wind_speed_10m,weather_code&temperature_unit=fahrenheit&wind_speed_unit=mph';fetch(url).then(r=>r.json()).then(function(d){var c=d.current||{};if(c.temperature_2m!=null)document.getElementById('c-temp').textContent=Math.round(c.temperature_2m)+'°F';if(c.wind_speed_10m!=null)document.getElementById('c-wind').textContent=Math.round(c.wind_speed_10m)+' mph';if(c.relative_humidity_2m!=null)document.getElementById('c-hum').textContent=Math.round(c.relative_humidity_2m)+'%';var codes={0:'Clear',1:'Mostly clear',2:'Partly cloudy',3:'Overcast',45:'Fog',48:'Fog',51:'Drizzle',53:'Drizzle',55:'Drizzle',61:'Light rain',63:'Rain',65:'Heavy rain',71:'Snow',73:'Snow',75:'Snow',80:'Showers',81:'Showers',82:'Showers',95:'Storms',96:'Storms',99:'Storms'};if(c.weather_code!=null)document.getElementById('c-sky').textContent=codes[c.weather_code]||'—';}).catch(function(){document.getElementById('c-temp').textContent='—';});})();
 (function(){var url='https://waterservices.usgs.gov/nwis/iv/?format=json&sites=03559000&parameterCd=00060&siteStatus=all';fetch(url).then(r=>r.json()).then(function(d){try{var v=d.value.timeSeries[0].values[0].value[0].value;document.getElementById('c-flow').textContent=Math.round(parseFloat(v)).toLocaleString()+' cfs';}catch(e){document.getElementById('c-flow').innerHTML='<a href="https://waterdata.usgs.gov/monitoring-location/03559000/" target="_blank" rel="noopener">USGS →</a>';}}).catch(function(){document.getElementById('c-flow').innerHTML='<a href="https://waterdata.usgs.gov/monitoring-location/03559000/" target="_blank" rel="noopener">USGS →</a>';});})();
 </script>
+<script src="https://link.basecampgetaways.com/js/form_embed.js"></script>
 </body>
 </html>
