@@ -32,7 +32,9 @@ header.site{position:sticky;top:0;z-index:50;background:rgba(15,42,35,.94);backd
 .hnav{display:flex;gap:8px;align-items:center}
 .hnav a.lnk{color:#e7eee7;font-size:14px;font-weight:600;padding:9px 8px}
 .hnav a.lnk:hover{color:#fff}
-@media(max-width:640px){.hnav a.lnk{display:none}}
+.hnav a.phone{color:#fff;font-weight:700}
+.hnav a.phone:hover{color:#e8cf94}
+@media(max-width:640px){.hnav a.lnk:not(.phone){display:none}}
 /* hero */
 .hero{position:relative;color:#fff;overflow:hidden;background:#12302a}
 .hero .bg{position:absolute;inset:0;background-size:cover;background-position:center;opacity:.9}
@@ -126,6 +128,7 @@ footer.site a{color:#e7eee7}
     <div class="hnav">
       <a class="lnk" href="https://blueridgegastays.com/" target="_blank" rel="noopener">Browse Rentals</a>
       <a class="lnk" href="https://blueridgegastays.com/case-studies.html">Case Studies</a>
+      <a class="lnk phone" href="tel:+17062227424">📞 706-222-7424</a>
       <a class="btn" href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o" target="_blank" rel="noopener">Schedule a Call</a>
     </div>
   </div>
@@ -304,6 +307,7 @@ footer.site a{color:#e7eee7}
 <footer class="site"><div class="wrap">
   <div class="brand" style="margin-bottom:10px"><img src="https://assets.craftedstays.co/oQqFN8faM3foYkBbda3UEMBAG0o2/0RlW7pplaYbum2AzPd1C/CV-5-NoBG-1772803499883.png" alt="Basecamp Getaways logo" style="width:36px;height:36px"><span class="bt" style="color:#fff;font-family:Georgia,serif;font-weight:700">Blue Ridge Stays<small style="display:block;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#cdd8cf">by Basecamp Getaways</small></span></div>
   <p style="color:#9fb6a6;font-size:13.5px;max-width:520px">Owner-first short-term rental management &amp; home watch for Blue Ridge, Mineral Bluff &amp; Lake Chatuge, Georgia — in partnership with Cabin Keeper.</p>
+  <p style="margin-top:14px;font-size:18px;font-family:Georgia,serif"><strong style="color:#fff">Call us: <a href="tel:+17062227424" style="color:#e8cf94">706-222-7424</a></strong></p>
   <p style="margin-top:8px"><a href="https://blueridgegastays.com/">Browse rentals</a> · <a href="https://blueridgegastays.com/case-studies.html">Case studies</a> · <a href="https://link.basecampgetaways.com/widget/booking/ux0V6sy1tHczRlxZIU3o" target="_blank" rel="noopener">Schedule a call</a></p>
   <div class="fine">© <span id="yr"></span> Basecamp Getaways · Blue Ridge Stays. Owner results reflect actual 2025 performance; individual results vary by home, size, location, and season.</div>
 </div></footer>
