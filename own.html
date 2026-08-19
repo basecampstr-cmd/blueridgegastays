@@ -7,8 +7,10 @@
 <meta name="description" content="Owner-first short-term rental management for Blue Ridge, GA cabins. More revenue, lower fees, commission-free direct bookings, and year-round home watch with Cabin Keeper. Get a free revenue projection.">
 <meta property="og:title" content="Your Blue Ridge home, watched over like it's ours — and earning like it should.">
 <meta property="og:description" content="Full-service Blue Ridge cabin management by Basecamp Getaways. Free revenue projection.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Zilla+Slab:ital,wght@0,500;0,600;1,600&display=swap" rel="stylesheet">
 <style>
-:root{--pine:#16382f;--pine2:#0f2a23;--moss:#3f7d63;--sage:#7a9b86;--cream:#f6f1e7;--paper:#fffdf8;--ink:#1d2b2a;--muted:#5d6a64;--gold:#c39a4e;--gold2:#a9823a;--line:#e7ddca;--shadow:0 14px 40px rgba(20,40,34,.12);}
+:root{--pine:#16382f;--pine2:#0f2a23;--moss:#3f7d63;--sage:#7a9b86;--cream:#f6f1e7;--paper:#fffdf8;--ink:#1d2b2a;--muted:#5d6a64;--gold:#c39a4e;--gold2:#a9823a;--line:#e7ddca;--shadow:0 14px 40px rgba(20,40,34,.12);--forest:#143610;--forest-2:#26492b;--gold-dk:#8f671f;--gold-lt:#e7c98a;--ink-soft:#44513f;--r:14px;--r-lg:20px;--shadow-lg:0 24px 60px rgba(20,54,16,.18);}
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
 h1,h2,h3,h4,.serif{font-family:Georgia,"Times New Roman",serif}
@@ -119,6 +121,62 @@ section.block.alt{background:var(--paper)}
 footer.site{background:var(--pine2);color:#cdd8cf;padding:36px 0;font-size:14px}
 footer.site a{color:#e7eee7}
 .fine{margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:12.5px;color:#8ea596}
+/* ===== LAUNCH PACKAGE PROMO ===== */
+.sec-head{max-width:760px;margin:0 auto 30px;text-align:center}
+.sec-head .script{display:block;font-family:'Zilla Slab',serif;font-style:italic;font-weight:600;font-size:clamp(1.4rem,3vw,2rem);color:var(--gold-dk);margin-bottom:4px}
+.sec-head h2{font-family:Georgia,serif;font-size:clamp(26px,4vw,40px);color:var(--pine);margin:6px 0 10px}
+.sec-head p{color:var(--muted);font-size:16.5px;margin:0}
+.launch-ribbon{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;background:linear-gradient(90deg,var(--gold-dk),var(--gold));color:#231a06;padding:11px 22px;text-align:center;line-height:1.35;border-bottom:2px solid var(--gold-lt)}
+.launch-ribbon:hover{background:linear-gradient(90deg,var(--gold),var(--gold-lt))}
+.launch-ribbon .lr-badge{font-family:'Oswald',sans-serif;font-weight:700;font-size:20px;letter-spacing:.02em;background:var(--forest);color:var(--gold-lt);padding:3px 12px;border-radius:8px;flex:none}
+.launch-ribbon .lr-txt{font-family:'Inter',sans-serif;font-size:14.5px;font-weight:500;max-width:60ch}
+.launch-ribbon .lr-txt b{font-weight:700}
+.launch-ribbon .lr-cta{font-family:'Oswald',sans-serif;font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;background:var(--forest);color:#fff;padding:9px 18px;border-radius:100px;flex:none;white-space:nowrap}
+.launch-ribbon:hover .lr-cta{background:var(--forest-2)}
+.section.launch{background:radial-gradient(1200px 500px at 50% -10%,#1c4417 0%,var(--forest) 55%);color:#fff}
+.section.launch .sec-head h2{color:#fff}
+.section.launch .sec-head .script{color:var(--gold-lt)}
+.section.launch .sec-head p{color:rgba(255,255,255,.85)}
+.lp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;max-width:860px;margin:0 auto}
+.lp-card{background:#fff;border-radius:var(--r-lg);padding:30px 26px 28px;position:relative;border:1px solid var(--line);box-shadow:var(--shadow-lg);display:flex;flex-direction:column}
+.lp-card .lp-ic{width:52px;height:52px;border-radius:13px;background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
+.lp-card h3{font-size:1.32rem;margin-bottom:9px;color:var(--forest)}
+.lp-card p{font-size:14.5px;color:var(--ink-soft);flex:1}
+.lp-card .lp-val{margin-top:18px;font-family:'Oswald',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-dk);background:var(--cream);border:1px solid var(--gold-lt);border-radius:100px;padding:8px 16px;text-align:center;align-self:flex-start}
+.lp-note{max-width:760px;margin:34px auto 0;text-align:center}
+.lp-note .btn{margin-bottom:16px}
+.lp-fine{font-size:12.5px;color:rgba(255,255,255,.62);max-width:640px;margin:0 auto;line-height:1.6}
+.lp-pick{display:inline-block;font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:8px}
+.form-tiein{max-width:680px;margin:0 auto 26px;background:var(--forest);border:1px solid var(--gold-lt);border-radius:var(--r);padding:16px 22px;text-align:center;font-size:15px;color:#fff}
+.form-tiein b{color:var(--gold-lt)}
+.sticky-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:60;align-items:center;justify-content:space-between;gap:12px;background:var(--forest);border-top:2px solid var(--gold);padding:11px 16px calc(11px + env(safe-area-inset-bottom,0px));box-shadow:0 -8px 24px rgba(20,54,16,.28);transition:transform .3s}
+.sticky-cta .sc-txt{font-family:'Inter',sans-serif;font-size:13px;line-height:1.25;color:#fff}
+.sticky-cta .sc-txt b{color:var(--gold-lt);font-family:'Oswald',sans-serif;font-weight:600;letter-spacing:.02em}
+.sticky-cta .sc-btn{flex:none;font-family:'Oswald',sans-serif;font-weight:600;font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;background:var(--gold);color:#231a06;padding:10px 16px;border-radius:100px;white-space:nowrap}
+.sticky-cta.hide{transform:translateY(130%)}
+.side-rail{display:none;position:fixed;right:22px;bottom:22px;z-index:60;width:308px;background:var(--forest);color:#fff;border:1px solid rgba(231,201,138,.35);border-radius:16px;padding:20px 18px 16px;box-shadow:0 22px 54px rgba(20,54,16,.4);opacity:0;transform:translateY(16px);transition:opacity .3s,transform .3s;pointer-events:none}
+.side-rail.show{opacity:1;transform:none;pointer-events:auto}
+.side-rail .sr-badge{position:absolute;top:-15px;left:18px;background:var(--gold);color:#231a06;font-family:'Oswald',sans-serif;font-weight:700;font-size:16px;letter-spacing:.02em;padding:4px 13px;border-radius:8px}
+.side-rail .sr-close{position:absolute;top:9px;right:11px;background:transparent;border:none;color:rgba(255,255,255,.55);font-size:19px;line-height:1;cursor:pointer;padding:2px 6px}
+.side-rail .sr-close:hover{color:#fff}
+.side-rail .sr-body{margin:10px 0 15px}
+.side-rail .sr-body b{font-family:'Zilla Slab',serif;font-weight:600;font-size:1.18rem;color:#fff;display:block;margin-bottom:5px}
+.side-rail .sr-body span{font-size:13.5px;color:rgba(255,255,255,.82);line-height:1.5}
+.side-rail .sr-cta{display:block;text-align:center;background:var(--gold);color:#231a06;font-family:'Oswald',sans-serif;font-weight:600;font-size:13px;letter-spacing:.05em;text-transform:uppercase;padding:12px;border-radius:100px;transition:background .2s}
+.side-rail .sr-cta:hover{background:var(--gold-lt)}
+@media(min-width:901px){.side-rail{display:block}}
+@media(max-width:900px){.lp-grid{grid-template-columns:1fr}.launch-ribbon .lr-cta{width:100%;max-width:280px}}
+@media(max-width:700px){.sticky-cta{display:flex}body{padding-bottom:70px}.launch-ribbon{gap:10px;padding:12px 16px}.launch-ribbon .lr-badge{font-size:18px}.launch-ribbon .lr-txt{font-size:13.5px}}
+/* mobile swipe sliders */
+@media(max-width:768px){
+.feat,.results,.steps,.lp-grid{display:flex;flex-wrap:nowrap;overflow-x:auto;gap:16px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:thin;margin:0 -22px;padding:6px 22px 18px}
+.feat>*,.results>*,.steps>*,.lp-grid>*{flex:0 0 82%;scroll-snap-align:start}
+.feat::-webkit-scrollbar,.results::-webkit-scrollbar,.steps::-webkit-scrollbar,.lp-grid::-webkit-scrollbar{height:6px}
+.feat::-webkit-scrollbar-thumb,.results::-webkit-scrollbar-thumb,.steps::-webkit-scrollbar-thumb,.lp-grid::-webkit-scrollbar-thumb{background:var(--gold);border-radius:100px}
+.swipe-hint{display:block;text-align:center;font-family:'Oswald',sans-serif;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-dk);margin:-10px 0 14px}
+.section.launch .swipe-hint{color:var(--gold-lt)}
+}
+.swipe-hint{display:none}
 </style>
 </head>
 <body>
@@ -133,6 +191,13 @@ footer.site a{color:#e7eee7}
     </div>
   </div>
 </header>
+
+<!-- LAUNCH PACKAGE RIBBON -->
+<a href="#launch" class="launch-ribbon" aria-label="Choose your five thousand dollar Basecamp Launch Package">
+  <span class="lr-badge">$5,000</span>
+  <span class="lr-txt"><b>Choose your Basecamp Launch Package.</b> See if your cabin qualifies — get your free income projection &amp; package options.</span>
+  <span class="lr-cta">See the packages →</span>
+</a>
 
 <section class="hero">
   <div class="bg" style="background-image:url('https://a0.muscache.com/im/pictures/hosting/Hosting-1035406818240049069/original/6a1436de-9c04-4ec4-9265-c7ed84147048.png')"></div>
@@ -192,6 +257,7 @@ footer.site a{color:#e7eee7}
       <h2 class="serif">More eyes on your cabin. More bookings you keep.</h2>
       <p>We don't just list your home and hope. We drive demand — and we keep more of it commission-free.</p>
     </div>
+    <div class="swipe-hint">Swipe →</div>
     <div class="feat">
       <div class="fcard">
         <div class="ic">🔎</div>
@@ -243,6 +309,7 @@ footer.site a{color:#e7eee7}
       <h2 class="serif">What a turnaround looks like.</h2>
       <p>Each of these Blue Ridge cabins came to us underperforming under a 35%-fee manager. Same owner-first playbook, better year.</p>
     </div>
+    <div class="swipe-hint">Swipe →</div>
     <div class="results">
       <div class="rcard"><div class="top"><b>Star Mountain</b><span>5-bedroom mountain lodge</span></div><div class="num"><div class="n">$96K</div><div class="s">2025 revenue</div></div></div>
       <div class="rcard"><div class="top"><b>Cozy Bear Cabin</b><span>3-bedroom cabin</span></div><div class="num"><div class="n">$62K</div><div class="s">2025 revenue</div></div></div>
@@ -259,11 +326,55 @@ footer.site a{color:#e7eee7}
       <div class="eyebrow">How It Works</div>
       <h2 class="serif">From first call to more income — the easy way.</h2>
     </div>
+    <div class="swipe-hint">Swipe →</div>
     <div class="steps">
       <div class="step"><div class="no">1</div><h4>Free revenue projection</h4><p>Tell us about your cabin and we'll send back a custom Blue Ridge earnings estimate.</p></div>
       <div class="step"><div class="no">2</div><h4>Seamless onboarding</h4><p>Photos, listings, dynamic pricing, and 100% keyless entry — we handle the setup.</p></div>
       <div class="step"><div class="no">3</div><h4>We manage &amp; watch over</h4><p>Guests, cleaning, and maintenance, plus year-round home watch with Cabin Keeper.</p></div>
       <div class="step"><div class="no">4</div><h4>You earn more</h4><p>Commission-free direct bookings and transparent monthly owner statements.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- LAUNCH PACKAGE -->
+<section class="block section launch" id="launch">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="lp-pick">A limited welcome offer for new owners</span>
+      <span class="script">The Basecamp Launch Package</span>
+      <h2 class="serif">Up to $5,000 to launch your Blue Ridge home right.</h2>
+      <p>List a qualifying cabin with us and choose one Launch Package — our investment in getting your home earning at its full potential from day one. Pick the one that fits your cabin.</p>
+    </div>
+    <div class="swipe-hint">Swipe packages →</div>
+    <div class="lp-grid">
+      <div class="lp-card">
+        <div class="lp-ic">🌿</div>
+        <h3>Lawn Care + Cabin Keeper</h3>
+        <p>One $5,000 pool across two services — you direct where it goes. Routine lawn &amp; grounds care on your property's seasonal schedule, plus a full year of <b>Cabin Keeper</b> inspections: a deeper, systems-level check on your cabin between our turnover visits.</p>
+        <span class="lp-val">$5,000 combined value</span>
+      </div>
+      <div class="lp-card">
+        <div class="lp-ic">📈</div>
+        <h3>Performance Guarantee</h3>
+        <p>We put our own management fees behind your projection. We agree on an annual gross booking revenue target before launch — if we miss it during the performance period, we credit the shortfall back against future fees, capped at $5,000.</p>
+        <span class="lp-val">Up to $5,000 in fee credits</span>
+      </div>
+      <div class="lp-card">
+        <div class="lp-ic">📸</div>
+        <h3>Basecamp Property Makeover</h3>
+        <p>Professional vacation-rental photography — interior, exterior, twilight and drone — plus a room-by-room redesign and amenity consultation so your cabin looks unforgettable and converts more lookers into bookings.</p>
+        <span class="lp-val">Up to $5,000 value</span>
+      </div>
+      <div class="lp-card">
+        <div class="lp-ic">🛠️</div>
+        <h3>The $5,000 Property Upgrade</h3>
+        <p>Buy a Basecamp-approved, revenue-producing improvement — a hot tub, sauna, fire pit, game room, or kayaks — and earn up to $5,000 back over your management term against your paid receipts.</p>
+        <span class="lp-val">Up to $5,000 back</span>
+      </div>
+    </div>
+    <div class="lp-note">
+      <a href="#projection" class="btn btn-gold">Get my free projection &amp; package options</a>
+      <p class="lp-fine">You choose one package when you sign your management agreement. Available to qualifying properties projected to earn $85,000+ in annual gross booking revenue. Promotional value up to $5,000; terms apply. Start with a free, no-obligation income projection below to see if your home qualifies.</p>
     </div>
   </div>
 </section>
@@ -276,6 +387,7 @@ footer.site a{color:#e7eee7}
       <h2 class="serif">Let's see what your cabin could earn.</h2>
       <p>No pressure, no obligation — just a clear picture of your home's potential in Blue Ridge.</p>
     </div>
+    <div class="form-tiein">Fill this out to get <b>two things back</b>: (1) your complimentary income projection, and (2) your <b>$5,000 Launch Package</b> options.</div>
     <div class="ownergrid">
       <div>
         <ul class="reass">
@@ -297,7 +409,7 @@ footer.site a{color:#e7eee7}
           <p>Tell us about your cabin and we'll send back a custom Blue Ridge earnings estimate.</p>
         </div>
         <div class="fb">
-          <iframe src="https://link.basecampgetaways.com/widget/form/qVfRSODy12KKV9R82IZs" style="width:100%;height:900px;border:none;border-radius:8px" id="inline-qVfRSODy12KKV9R82IZs" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Basecamp Getaways Management " data-height="892" data-layout-iframe-id="inline-qVfRSODy12KKV9R82IZs" data-form-id="qVfRSODy12KKV9R82IZs" title="Basecamp Getaways Management "></iframe>
+          <iframe src="https://link.basecampgetaways.com/widget/form/FtqtzeDsCXckqbXr1MfD" style="width:100%;height:900px;border:none;border-radius:8px" id="inline-FtqtzeDsCXckqbXr1MfD" data-layout="{'id':'INLINE'}" data-trigger-type="alwaysShow" data-trigger-value="" data-activation-type="alwaysActivated" data-activation-value="" data-deactivation-type="neverDeactivate" data-deactivation-value="" data-form-name="Basecamp Getaways Management  - Blue Ridge" data-height="892" data-layout-iframe-id="inline-FtqtzeDsCXckqbXr1MfD" data-form-id="FtqtzeDsCXckqbXr1MfD" title="Basecamp Getaways Management  - Blue Ridge"></iframe>
         </div>
       </div>
     </div>
@@ -312,6 +424,44 @@ footer.site a{color:#e7eee7}
   <div class="fine">© <span id="yr"></span> Basecamp Getaways · Blue Ridge Stays. Owner results reflect actual 2025 performance; individual results vary by home, size, location, and season.</div>
 </div></footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<!-- DESKTOP FLOATING SIDE RAIL -->
+<div class="side-rail" id="sideRail" role="complementary" aria-label="Basecamp Launch Package offer">
+  <button class="sr-close" id="srClose" aria-label="Dismiss offer">&times;</button>
+  <div class="sr-badge">$5,000</div>
+  <div class="sr-body">
+    <b>Basecamp Launch Package</b>
+    <span>See if your cabin qualifies — get a free income projection &amp; your package options.</span>
+  </div>
+  <a href="#projection" class="sr-cta">Get my free projection →</a>
+</div>
+
+<!-- STICKY MOBILE CTA -->
+<a href="#projection" class="sticky-cta" id="stickyCta" aria-label="Get your free projection and five thousand dollar Launch Package options">
+  <span class="sc-txt"><b>$5,000 Launch Package</b><br>See if your cabin qualifies</span>
+  <span class="sc-btn">Free Projection →</span>
+</a>
+
+<script>
+(function(){
+  var rail=document.getElementById('sideRail');
+  var sticky=document.getElementById('stickyCta');
+  var closeBtn=document.getElementById('srClose');
+  var railClosed=false;
+  if(closeBtn){closeBtn.addEventListener('click',function(){railClosed=true;if(rail)rail.classList.remove('show');});}
+  function update(){
+    var y=window.pageYOffset||document.documentElement.scrollTop;
+    var est=document.getElementById('projection');
+    var nearForm=false;
+    if(est){var r=est.getBoundingClientRect();nearForm=r.top < window.innerHeight*0.85 && r.bottom>0;}
+    if(rail){ if(y>560 && !nearForm && !railClosed){rail.classList.add('show');} else {rail.classList.remove('show');} }
+    if(sticky){ if(nearForm){sticky.classList.add('hide');} else {sticky.classList.remove('hide');} }
+  }
+  window.addEventListener('scroll',update,{passive:true});
+  window.addEventListener('resize',update,{passive:true});
+  update();
+})();
+</script>
 <script src="https://link.basecampgetaways.com/js/form_embed.js"></script>
 </body>
 </html>
