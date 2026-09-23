@@ -1,9 +1,10 @@
 # Owner mailer / QR traffic goes to the one consolidated offer page.
 # ?m= tells that page which tracking number to show and tags the GHL lead.
 # 302 (temporary) on purpose, so this is reversible.
-# /own and /own.html were the local aliases for this market's owners page.
-/owners       https://basecampgetaways.com/offer?m=blueridge   302
-/owners/      https://basecampgetaways.com/offer?m=blueridge   302
-/own          https://basecampgetaways.com/offer?m=blueridge   302
-/own/         https://basecampgetaways.com/offer?m=blueridge   302
-/own.html     https://basecampgetaways.com/offer?m=blueridge   302
+# This market's owners page is own.html; /own and /owners were both aliases.
+# The ! forces the redirect ahead of the static file, which would otherwise win.
+/owners       https://basecampgetaways.com/offer?m=blueridge   302!
+/owners/      https://basecampgetaways.com/offer?m=blueridge   302!
+/own          https://basecampgetaways.com/offer?m=blueridge   302!
+/own/         https://basecampgetaways.com/offer?m=blueridge   302!
+/own.html     https://basecampgetaways.com/offer?m=blueridge   302!
