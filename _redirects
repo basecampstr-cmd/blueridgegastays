@@ -1,10 +1,31 @@
-# Owner mailer / QR traffic goes to the one consolidated offer page.
-# ?m= tells that page which tracking number to show and tags the GHL lead.
+# Owner traffic -- postcard, QR, email and SMS -- all lands on the one
+# consolidated offer page. ?m= tells that page which tracking number to
+# show and tags the GHL lead with the market.
+#
+# The utm_source=:src rules below exist for a specific reason: Netlify
+# DROPS the incoming query string when the destination already carries one
+# (and ours carries ?m=). Without these rules the utm_source that the email
+# and SMS links carry dies in the hop, and GA4 files those visits as a
+# referral from this site. Capturing :src and writing it back out is what
+# keeps the channel visible.
+#
+# utm_medium is set here too. GA4 needs source AND medium together to put a
+# session in a channel group; the inbound links only carry source, so medium
+# would be missing and the session would land in "Unassigned".
+#
+# Anything arriving with no utm_source is the printed postcard or a QR scan.
+# Conditional rules must stay ABOVE the catch-alls -- first match wins.
 # 302 (temporary) on purpose, so this is reversible.
-# This market's owners page is own.html; /own and /owners were both aliases.
-# The ! forces the redirect ahead of the static file, which would otherwise win.
-/owners       https://basecampgetaways.com/offer?m=blueridge   302!
-/owners/      https://basecampgetaways.com/offer?m=blueridge   302!
-/own          https://basecampgetaways.com/offer?m=blueridge   302!
-/own/         https://basecampgetaways.com/offer?m=blueridge   302!
-/own.html     https://basecampgetaways.com/offer?m=blueridge   302!
+# This site serves its owner page at /own, so both spellings are covered.
+
+/owners       utm_source=:src  https://basecampgetaways.com/offer?m=blueridge&utm_source=:src&utm_medium=:src&utm_campaign=owner-5k-fall26  302!
+/owners/      utm_source=:src  https://basecampgetaways.com/offer?m=blueridge&utm_source=:src&utm_medium=:src&utm_campaign=owner-5k-fall26  302!
+/own          utm_source=:src  https://basecampgetaways.com/offer?m=blueridge&utm_source=:src&utm_medium=:src&utm_campaign=owner-5k-fall26  302!
+/own/         utm_source=:src  https://basecampgetaways.com/offer?m=blueridge&utm_source=:src&utm_medium=:src&utm_campaign=owner-5k-fall26  302!
+/own.html     utm_source=:src  https://basecampgetaways.com/offer?m=blueridge&utm_source=:src&utm_medium=:src&utm_campaign=owner-5k-fall26  302!
+
+/owners       https://basecampgetaways.com/offer?m=blueridge&utm_source=postcardmania&utm_medium=direct_mail&utm_campaign=owner-5k-fall26  302!
+/owners/      https://basecampgetaways.com/offer?m=blueridge&utm_source=postcardmania&utm_medium=direct_mail&utm_campaign=owner-5k-fall26  302!
+/own          https://basecampgetaways.com/offer?m=blueridge&utm_source=postcardmania&utm_medium=direct_mail&utm_campaign=owner-5k-fall26  302!
+/own/         https://basecampgetaways.com/offer?m=blueridge&utm_source=postcardmania&utm_medium=direct_mail&utm_campaign=owner-5k-fall26  302!
+/own.html     https://basecampgetaways.com/offer?m=blueridge&utm_source=postcardmania&utm_medium=direct_mail&utm_campaign=owner-5k-fall26  302!
