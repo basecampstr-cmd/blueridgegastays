@@ -135,6 +135,9 @@ footer.site{background:var(--pine2);color:#cdd8cf;padding:40px 0;font-size:14px}
 footer.site .cols{display:flex;flex-wrap:wrap;gap:30px;justify-content:space-between}
 footer.site a{color:#e7eee7}
 .fine{margin-top:24px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);font-size:12.5px;color:#8ea596}
+
+.ep-wrapper,.ep-iFrameContainer{height:auto !important;overflow:visible !important}
+iframe[data-form-id]{position:static !important;left:auto !important;top:auto !important;opacity:1 !important;visibility:visible !important;pointer-events:auto !important;width:100% !important;display:block !important}
 </style>
 </head>
 <body>
@@ -846,5 +849,40 @@ function doSearch(){var g=parseInt(document.getElementById('gs').value||'0',10);
 (function(){var url='https://waterservices.usgs.gov/nwis/iv/?format=json&sites=03559000&parameterCd=00060&siteStatus=all';fetch(url).then(r=>r.json()).then(function(d){try{var v=d.value.timeSeries[0].values[0].value[0].value;document.getElementById('c-flow').textContent=Math.round(parseFloat(v)).toLocaleString()+' cfs';}catch(e){document.getElementById('c-flow').innerHTML='<a href="https://waterdata.usgs.gov/monitoring-location/03559000/" target="_blank" rel="noopener">USGS →</a>';}}).catch(function(){document.getElementById('c-flow').innerHTML='<a href="https://waterdata.usgs.gov/monitoring-location/03559000/" target="_blank" rel="noopener">USGS →</a>';});})();
 </script>
 <script src="https://link.basecampgetaways.com/js/form_embed.js"></script>
+
+<script>
+(function () {
+  var f = document.querySelector('iframe[data-form-id]');
+  if (!f) return;
+  function floorH() { return window.innerWidth <= 820 ? 1650 : 1300; }
+  function setH(px) { f.style.setProperty('height', Math.round(px) + 'px', 'important'); }
+  function reveal() {
+    f.style.setProperty('position', 'static', 'important');
+    f.style.setProperty('left', 'auto', 'important');
+    f.style.setProperty('top', 'auto', 'important');
+    f.style.setProperty('opacity', '1', 'important');
+    f.style.setProperty('visibility', 'visible', 'important');
+    f.style.setProperty('pointer-events', 'auto', 'important');
+    f.style.setProperty('width', '100%', 'important');
+    var p = f.parentElement, g = p && p.parentElement;
+    [p, g].forEach(function (el) {
+      if (el && /ep-/.test(el.className || '')) el.style.setProperty('height', 'auto', 'important');
+    });
+  }
+  var sized = false;
+  reveal(); setH(floorH());
+  window.addEventListener('message', function (e) {
+    if (!/leadconnector|basecampgetaways/.test(e.origin || '')) return;
+    var d = typeof e.data === 'string' ? e.data : '';
+    if (d.indexOf('[iFrameSizer]') !== 0) return;
+    var m = d.match(/\[iFrameSizer\][^:]*:([0-9.]+):/);
+    if (m) { var h = parseFloat(m[1]); if (h > 500) { sized = true; setH(h + 24); } }
+    reveal();
+  }, false);
+  var t = setInterval(function () { reveal(); if (!sized) setH(floorH()); }, 400);
+  setTimeout(function () { clearInterval(t); }, 20000);
+  window.addEventListener('resize', function () { if (!sized) setH(floorH()); });
+})();
+</script>
 </body>
 </html>
